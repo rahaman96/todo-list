@@ -2,7 +2,7 @@
 import React,{useState} from "react";
 import { toast } from 'react-toastify'
 import { ToastContainer } from "react-toastify";
-import { Todo } from "./Todo";
+import { Todo } from "./TodoList";
 import { TodoForm } from "./TodoForm";
 import { v4 as uuidv4 } from "uuid";
 import { EditTodoForm } from "./EditTodoForm";
@@ -51,7 +51,7 @@ export const TodoWrapper = () => {
 
     return (
         <div className="TodoWrapper">
-            <h1>TO DO LIST</h1>
+            <h1>TODO LIST</h1>
             <TodoForm addTodo={addTodo} className='todo-list' />
             {/* display todos */}
             {todos.map((todo) =>
